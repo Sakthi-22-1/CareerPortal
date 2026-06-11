@@ -1,0 +1,16 @@
+# Java / Maven / Build directories
+target/
+*.class
+src/main/webapp/WEB-INF/classes/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Database credentials and dumps
+# (In a real project, you might not want to commit schema.sql if it has passwords)
+
+# OS generated files
+.DS_Store
+Thumbs.db
