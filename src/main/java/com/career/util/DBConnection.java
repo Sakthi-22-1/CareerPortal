@@ -14,9 +14,9 @@ import java.sql.SQLException;
 public class DBConnection {
 
     // ---- Database configuration constants ----
-    private static final String URL      = "jdbc:mysql://localhost:3306/career_portal";
-    private static final String USER     = "root";
-    private static final String PASSWORD = "Sakthi@9360540023";
+    private static final String URL      = System.getenv("MYSQL_URL") != null ? System.getenv("MYSQL_URL") : "jdbc:mysql://localhost:3306/career_portal";
+    private static final String USER     = System.getenv("MYSQL_USER") != null ? System.getenv("MYSQL_USER") : "root";
+    private static final String PASSWORD = System.getenv("MYSQL_PASSWORD") != null ? System.getenv("MYSQL_PASSWORD") : "Sakthi@9360540023";
 
     /**
      * Returns a new Connection object to the career_portal database.
